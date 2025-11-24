@@ -7,6 +7,10 @@
   <version>0.0.5</version>
   <name>my-app</name>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <url>http://maven.apache.org</url>
 
   <dependencies>
@@ -49,7 +53,9 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
+          <!-- JDK 21 compiling against Java 8 APIs/bytecode -->
           <release>8</release>
+          <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
       </plugin>
 
