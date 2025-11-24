@@ -49,15 +49,15 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version>
-        <configuration>
-          <!-- JDK 21 compiling against Java 8 APIs/bytecode -->
-          <release>8</release>
-          <encoding>${project.build.sourceEncoding}</encoding>
-        </configuration>
-      </plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.11.0</version>
+  <configuration>
+    <release>21</release>
+    <encoding>UTF-8</encoding>
+  </configuration>
+</plugin>
+
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
